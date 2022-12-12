@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Search</title>
+    <style>
+      .searchbox {
+        float: left;
+      }
+      input[type="text"] {
+        padding: 6px;
+        margin-top: 8px;
+        font-size: 17px;
+        border: none;
+      }
+      .searchbox button {
+        padding: 8px;
+        margin-top: 10px;
+        margin-left: 10px;
+        font-size: 20px;
+        border: none;
+        cursor: pointer;
+      }
+
+      .searchbox button:hover {
+        background: blue;
+      }
+    </style>
+    <body style="background-color: tan"></body>
+    <link rel="stylesheet" href="styles/navbar.css" />
+    <link rel="stylesheet" href="styles/search.css" />
+    <script src="https://use.fontawesome.com/d721eef411.js"></script>
+  </head>
+  <body>
+    <nav>
+      <div class="heading">
+        <h4>GAYZ BookStore</h4>
+      </div>
+      <ul class="nav-links">
+        <li><a class="active" href="index.html">Home</a></li>
+        <li><a class="active" href="priceTool.html">PCT</a></li>
+        <li><a class="active" href="search.html">Search</a></li>
+        <li>
+          <a class="active" href="cart.html"
+            ><i class="fa fa-shopping-cart" aria-hidden="true"></i
+          ></a>
+        </li>
+      </ul>
+    </nav>
+
+    <h1>Sign Up Here!</h1>
+
+    <div class="searchbox">
+      <form action="SignUp" method="POST">
+      	UserName: <input type="text" name="username"> <br />
+      	
+      	Password: <input type="text" name="password"> <br />
+      
+
+        <br />
+
+        <input type="submit" value="Submit" />
+      </form>
+    </div>
+  </body>
+</html>
