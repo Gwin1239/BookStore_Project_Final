@@ -80,7 +80,7 @@ public class InsertBook extends HttpServlet {
 
 		            "</ul>\n");
 
-		      out.println("<a href=/Bookstore-Project/insert.html>Add Another Book</a> <br>");
+		      out.println("<a href=/Bookstore-Project/insert.html  id=\"insert\" >Add Another Book</a> <br>");
 		      out.println("</body></html>");
 		   }
 

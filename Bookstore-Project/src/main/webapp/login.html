@@ -129,7 +129,7 @@ span.psw {
 
 <h2>BookStore Login</h2>
 
-<button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</button>
+<button onclick="document.getElementById('id01').style.display='block'" style="width:auto;" id="login">Login</button>
 
 <div id="id01" class="modal">
   
@@ -141,12 +141,12 @@ span.psw {
 
     <div class="container">
       <label for="uname"><b>Username</b></label>
-      <input type="text" placeholder="Enter Username" name="uname" required>
+      <input type="text" placeholder="Enter Username" name="uname" required id="user">
 
       <label for="psw"><b>Password</b></label>
-      <input type="password" placeholder="Enter Password" name="psw" required>
+      <input type="password" placeholder="Enter Password" name="psw" required id="pass">
         
-      <button type="submit">Login</button>
+      <button type="submit" id="submit">Login</button>
       <label>
         <input type="checkbox" checked="checked" name="remember"> Remember me
       </label>

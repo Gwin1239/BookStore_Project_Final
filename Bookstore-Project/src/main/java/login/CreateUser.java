@@ -57,7 +57,7 @@ public class CreateUser extends HttpServlet {
 
             "</ul>\n");
 
-      out.println("<a href=/Bookstore-Project/login.html>Log in</a> <br>");
+      out.println("<a href=/Bookstore-Project/login.html id=\"login\" >Log in</a> <br>");
       out.println("</body></html>");
    }
 

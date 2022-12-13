@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Search</title>
+    <title>Sign Up</title>
     <style>
       .searchbox {
         float: left;
@@ -36,11 +36,11 @@
         <h4>GAYZ BookStore</h4>
       </div>
       <ul class="nav-links">
-        <li><a class="active" href="index.html">Home</a></li>
-        <li><a class="active" href="priceTool.html">PCT</a></li>
-        <li><a class="active" href="search.html">Search</a></li>
+        <li><a class="active" href="index.html" id="home">Home</a></li>
+        <li><a class="active" href="priceTool.html" id="price">PCT</a></li>
+        <li><a class="active" href="search.html" id="search">Search</a></li>
         <li>
-          <a class="active" href="cart.html"
+          <a class="active" href="cart.html" id="cart"
             ><i class="fa fa-shopping-cart" aria-hidden="true"></i
           ></a>
         </li>
@@ -51,14 +51,14 @@
 
     <div class="searchbox">
       <form action="SignUp" method="POST">
-      	UserName: <input type="text" name="username"> <br />
+      	UserName: <input type="text" name="username" id="user"> <br />
       	
-      	Password: <input type="text" name="password"> <br />
+      	Password: <input type="text" name="password" id="pass"> <br />
       
 
         <br />
 
-        <input type="submit" value="Submit" />
+        <input type="submit" value="Submit"  id="submit"/>
       </form>
     </div>
   </body>

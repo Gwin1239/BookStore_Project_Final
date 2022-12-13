@@ -69,7 +69,7 @@ public class LoadCart extends HttpServlet {
 		        	   
 		        	   //out.println("<a href=" + bookURL + ">View book!</a> <br>");
 		 	           }
-		 	           out.println("<a href=/Bookstore-Project/index.html>Back to HomePage!</a> <br>");
+		 	           out.println("<a href=/Bookstore-Project/index.html id=\"back\" >Back to HomePage!</a> <br>");
 		 		   	   out.println("</body></html>");
 		 	           
 		 	           

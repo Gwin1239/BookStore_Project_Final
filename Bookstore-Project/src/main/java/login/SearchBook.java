@@ -124,7 +124,7 @@ public class SearchBook extends HttpServlet {
 						" <li><a href=/Bookstore-Project/details/" + newName + 
 	        			   
 
-	 	   	              " <b>Book Name</b> </a>: " + bookName + "\n" + //
+	 	   	              " id=\"book\" <b>Book Name</b> </a>: " + bookName + "\n" + //
 	 	   	              "  <li><b>Author Last Name</b>: " + authorFirstName + "\n" + //
 	 	   	          	"  <li><b>Author First Name</b>: " + authorLastName + "\n" + //
 	 	   	        "  <li><b>ISBN</b>: " + isbn + "\n" + //
@@ -134,7 +134,7 @@ public class SearchBook extends HttpServlet {
 	        	   
 	        	   //out.println("<a href=" + bookURL + ">View book!</a> <br>");
 	 	           }
-	 	           out.println("<a href=/Bookstore-Project/index.html>Back to HomePage!</a> <br>");
+	 	           out.println("<a href=/Bookstore-Project/index.html id=\"back\" >Back to HomePage!</a> <br>");
 	 		   	   out.println("</body></html>");
 	 	           
 	 	           
