@@ -47,7 +47,7 @@ public class LoadCart extends HttpServlet {
 		           
 		           ResultSet rs = preparedStmt.executeQuery();
 		           PrintWriter out = response.getWriter();
-		   	        String title = "Placeholder Results!";
+		   	        String title = "Your Cart!";
 		   	        String docType = "<!doctype html public \"-//w3c//dtd html 4.0 " + "transitional//en\">\n";
 		   	       response.setContentType("text/html");
 		   	       out.println(docType + //
@@ -69,7 +69,8 @@ public class LoadCart extends HttpServlet {
 		        	   
 		        	   //out.println("<a href=" + bookURL + ">View book!</a> <br>");
 		 	           }
-		 	           out.println("<a href=/Bookstore-Project/index.html id=\"back\" >Back to HomePage!</a> <br>");
+		           	   out.println("<a href=/Bookstore-Project/checkout.html><button>Checkout!</button></a><br>");
+		 	           out.println("<a href=/Bookstore-Project/index.html>Back to HomePage!</a> <br>");
 		 		   	   out.println("</body></html>");
 		 	           
 		 	           
