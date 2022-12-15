@@ -33,6 +33,9 @@ public class SearchBook extends HttpServlet {
 		
 		String rating = request.getParameter("rating");
 		
+		
+		
+		
 		System.out.println(request.getContextPath() + request.getServletPath() + request.getPathInfo());
 		System.out.println(bookTitle);
 		
@@ -92,6 +95,12 @@ public class SearchBook extends HttpServlet {
 	               preparedStmt.setString(1, fName);
 	               
 	           }
+	           else if (bookTitle.isEmpty() && fName.isEmpty() && lName.isEmpty() && !rating.isEmpty()) {
+	        	   String bookSelectSQL ="SELECT * FROM Books WHERE RATING = ?";
+	               preparedStmt = connection.prepareStatement(bookSelectSQL);
+	               preparedStmt.setDouble(1, Double.valueOf(rating));
+	               
+	           }
 	           
 	           
 	           else {
@@ -102,7 +111,7 @@ public class SearchBook extends HttpServlet {
 	           
 	           ResultSet rs = preparedStmt.executeQuery();
 	           PrintWriter out = response.getWriter();
-	   	        String title = "Placeholder Results!";
+	   	        String title = "Result from your search!";
 	   	        String docType = "<!doctype html public \"-//w3c//dtd html 4.0 " + "transitional//en\">\n";
 	   	       response.setContentType("text/html");
 	   	       out.println(docType + //
@@ -146,6 +155,9 @@ public class SearchBook extends HttpServlet {
 	      }
 		
 	}
+	
+	
+	
 		
 
 	/**

@@ -8,9 +8,9 @@ import java.util.Properties;
 public class UtilPropDjossou {
    static final boolean _W = System.getProperty("os.name").toLowerCase().contains("windows");
    static String _PROP_FILENAME_WIN_LOCAL = "C:\\YOUR_PATH\\webproject\\WebContent\\config.properties";
-   static String _PROP_FILENAME_OSX_LOCAL = "/Users/godwin/bookstore/BookStoreRepo/src/main/webapp/config.properties";
+   static String _PROP_FILENAME_OSX_LOCAL = "/Users/godwin/bookstore-workspace/Bookstore-Project/src/main/webapp/config.properties";
    // * Remote server path
-   static String _PROP_FILENAME_REMOTE = "/var/lib/tomcat9/webapps/tech-exercise/config.properties";
+   static String _PROP_FILENAME_REMOTE = "/var/lib/tomcat9/webapps/Bookstore-Project/config.properties";
    static Properties prop = new Properties();
 
    public static void loadProperty() throws Exception {

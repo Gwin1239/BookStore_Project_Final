@@ -49,6 +49,18 @@ public class PriceTool extends HttpServlet {
 		           
 		           if (bookTitle.isEmpty()) {
 		        	   
+		        	   PrintWriter out = response.getWriter();
+			   	        String docType = "<!doctype html public \"-//w3c//dtd html 4.0 " + "transitional//en\">\n";
+				   	       response.setContentType("text/html");
+		        	   
+		        	   out.println(docType + //
+			 	   	              "<p> Error in Book Title </p>" );   
+			        	   
+			        	   //out.println("<a href=" + bookURL + ">View book!</a> <br>");
+			 	           
+			 	           out.println("<a href=/Bookstore-Project/index.html id=\"back\" >Back to HomePage!</a> <br>");
+			 		   	   out.println("</body></html>");
+		        	   
 		        	  //need to throw an error here
 		              System.out.println("Inputted book DNE!");
 		              String bookSelectSQL ="SELECT * FROM Books";
@@ -58,7 +70,7 @@ public class PriceTool extends HttpServlet {
 		               String bookSelectSQL ="SELECT * FROM Books WHERE BOOK_TITLE ='" + bookTitle + "'";
 		               preparedStmt = connection.prepareStatement(bookSelectSQL);
 		            
-		            }
+		            
 		           
 		           ResultSet rs = preparedStmt.executeQuery();
 		           PrintWriter out = response.getWriter();
@@ -101,12 +113,13 @@ public class PriceTool extends HttpServlet {
 		        	   
 		        	   //out.println("<a href=" + bookURL + ">View book!</a> <br>");
 		 	           }
+		            }
 		 	           //out.println("<a href=/Bookstore-Project/index.html>Back to HomePage!</a> <br>");
 		 		   	   //out.println("</body></html>");
 		 	           
 		 	           
 		 	           
-		 	           connection.close();
+		 	       connection.close();
 		           
 			 }catch (Exception e) {
 		           e.printStackTrace();

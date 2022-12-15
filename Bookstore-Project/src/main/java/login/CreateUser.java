@@ -51,8 +51,8 @@ public class CreateUser extends HttpServlet {
             "<h2 align=\"center\">" + title + "</h2>\n" + //
             "<ul>\n" + //
 
-            "  <li><b>Book Title</b>: " + username + "\n" + //
-            "  <li><b>Author First Name</b>: " + password + "\n" + //
+            "  <li><b>Username</b>: " + username + "\n" + //
+            "  <li><b>Password</b>: " + password + "\n" + //
   
 
             "</ul>\n");
